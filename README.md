@@ -48,4 +48,7 @@ found on an organization's DNS servers.
 
 ![image](https://user-images.githubusercontent.com/90716060/227407223-04891c62-031f-42ea-8666-105dbf322d2a.png)
 
+Host Discovery With Nmap
+![image](https://user-images.githubusercontent.com/90716060/227408103-2ee62a0e-4bd4-444c-9262-bbde0a4e5cc2.png)
+
 
