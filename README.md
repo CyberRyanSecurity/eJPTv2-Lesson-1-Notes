@@ -51,4 +51,8 @@ found on an organization's DNS servers.
 Host Discovery With Nmap
 ![image](https://user-images.githubusercontent.com/90716060/227408103-2ee62a0e-4bd4-444c-9262-bbde0a4e5cc2.png)
 
+Assessment Methodologies: Footprinting & Scanning
+
+
+
 
