@@ -53,6 +53,8 @@ Host Discovery With Nmap
 
 Assessment Methodologies: Footprinting & Scanning
 
++
+
 
 
 
