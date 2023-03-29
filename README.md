@@ -53,7 +53,34 @@ Host Discovery With Nmap
 
 Assessment Methodologies: Footprinting & Scanning
 
-+
+Scope: What will provide them value while not interfering with business. Physical access? VPN connection? What will the org provide. 
+![image](https://user-images.githubusercontent.com/90716060/228408924-e916bf46-dd4a-447a-a491-ed0f2b13a278.png)
+ARP: Address Resolution Protocol (RFC 826)
++ Resolve IP to MAC 
+![image](https://user-images.githubusercontent.com/90716060/228409248-f08858b5-d1d6-4c1d-8d20-9f936b032f06.png)
+Internet Control Message Protocol - If packets aren't making it somewhere. 
++ Traceroute/ping
+
+Tools -- Wireshark/ARP-Scan/PING/FPING/NMAP/ZENMAP
+Wireshark: Sudo arp-scan ![image](https://user-images.githubusercontent.com/90716060/228410226-09694db8-1fb4-4093-a242-4f316e250941.png)
+
+ARP-SCAN
+![image](https://user-images.githubusercontent.com/90716060/228410322-931f56b9-48c0-4138-af06-0b1f5bb5579c.png)
+PING: Host unreachable ![image](https://user-images.githubusercontent.com/90716060/228410607-4e996b57-b44d-4144-a2dd-87e7036cf277.png)
+FPING -- ![image](https://user-images.githubusercontent.com/90716060/228410775-d6c5f2fa-1c32-4775-8c06-5bdc940ab14a.png)
+-a 2>/dev/null removes all error hosts that are unreachable through ICMP
+
+NMAP: ![image](https://user-images.githubusercontent.com/90716060/228411204-90307775-fd93-4da9-9ed8-b28872eaec31.png)
+ZENMAP: GUI version of nmap
++ ![image](https://user-images.githubusercontent.com/90716060/228411562-b6f113f9-c597-4b85-800a-466950a15cfc.png)
+
+Port Scanning:
+![image](https://user-images.githubusercontent.com/90716060/228412005-87fda04f-b374-4fdb-b8e3-4e3ace3646f8.png)
+TCP handshake
+![image](https://user-images.githubusercontent.com/90716060/228412042-b96fd848-cf2e-42c8-8882-ebf57ce2592a.png)
+![image](https://user-images.githubusercontent.com/90716060/228412073-babba266-a0e6-46e0-9724-c149a1719405.png)
+![image](https://user-images.githubusercontent.com/90716060/228412092-0fd4f523-a68a-418b-a58e-eb0bc951d172.png)
+![image](https://user-images.githubusercontent.com/90716060/228412125-3a5c94a0-0e97-4784-87d6-2dbae3c13282.png)
 
 
 
