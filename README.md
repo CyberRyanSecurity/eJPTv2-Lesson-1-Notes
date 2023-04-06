@@ -54,28 +54,36 @@ Host Discovery With Nmap
 Assessment Methodologies: Footprinting & Scanning
 
 Scope: What will provide them value while not interfering with business. Physical access? VPN connection? What will the org provide. 
+
 ![image](https://user-images.githubusercontent.com/90716060/228408924-e916bf46-dd4a-447a-a491-ed0f2b13a278.png)
+
 ARP: Address Resolution Protocol (RFC 826)
 + Resolve IP to MAC 
 ![image](https://user-images.githubusercontent.com/90716060/228409248-f08858b5-d1d6-4c1d-8d20-9f936b032f06.png)
+
 Internet Control Message Protocol - If packets aren't making it somewhere. 
 + Traceroute/ping
 
 Tools -- Wireshark/ARP-Scan/PING/FPING/NMAP/ZENMAP
+
 Wireshark: Sudo arp-scan ![image](https://user-images.githubusercontent.com/90716060/228410226-09694db8-1fb4-4093-a242-4f316e250941.png)
 
 ARP-SCAN
 ![image](https://user-images.githubusercontent.com/90716060/228410322-931f56b9-48c0-4138-af06-0b1f5bb5579c.png)
+
 PING: Host unreachable ![image](https://user-images.githubusercontent.com/90716060/228410607-4e996b57-b44d-4144-a2dd-87e7036cf277.png)
+
 FPING -- ![image](https://user-images.githubusercontent.com/90716060/228410775-d6c5f2fa-1c32-4775-8c06-5bdc940ab14a.png)
 -a 2>/dev/null removes all error hosts that are unreachable through ICMP
 
 NMAP: ![image](https://user-images.githubusercontent.com/90716060/228411204-90307775-fd93-4da9-9ed8-b28872eaec31.png)
+
 ZENMAP: GUI version of nmap
 + ![image](https://user-images.githubusercontent.com/90716060/228411562-b6f113f9-c597-4b85-800a-466950a15cfc.png)
 
 Port Scanning:
 ![image](https://user-images.githubusercontent.com/90716060/228412005-87fda04f-b374-4fdb-b8e3-4e3ace3646f8.png)
+
 TCP handshake
 ![image](https://user-images.githubusercontent.com/90716060/228412042-b96fd848-cf2e-42c8-8882-ebf57ce2592a.png)
 ![image](https://user-images.githubusercontent.com/90716060/228412073-babba266-a0e6-46e0-9724-c149a1719405.png)
@@ -83,6 +91,24 @@ TCP handshake
 ![image](https://user-images.githubusercontent.com/90716060/228412125-3a5c94a0-0e97-4784-87d6-2dbae3c13282.png)
 
 ![image](https://user-images.githubusercontent.com/90716060/229008879-ee0ab299-dac2-4caf-a66f-30357f5c92b1.png)
+
+Scan the server:
+
+Command ip a to find target inet/ip address
+Ping target IP address >> nmap IP address >> 
+nmap (IP address) -p-
+![image](https://user-images.githubusercontent.com/90716060/230255170-c91933d1-73df-4f08-9bbf-37fdbf651561.png)
+![image](https://user-images.githubusercontent.com/90716060/230255280-4bb9f4db-6984-4b0b-b3c1-c387e32d6b34.png)
+![image](https://user-images.githubusercontent.com/90716060/230255316-6904f0bf-5d9e-4985-8aa4-f2e5c854e8ec.png)
+
+Scan the server 2:
+ip a to find IP address >> Ping IP >> nmap IP -p 1-250 >> One open port 177 >> nmap IP -p 177 -A (aggressive scan)
+nmap IP -p 1-250 -sU (Scan UDP ports) >> 134/177/234 open >> nmap IP -p 134,177,234 -sUV >> ![image](https://user-images.githubusercontent.com/90716060/230256891-2658f3fc-0302-4f75-a379-8d3fb833294a.png)
+
+nmap IP -p 134 -sUVC (UDP,Version,scripts) >> 134 hosting tftp server
+
+Scan the server 3:
+nmap IP -T4 (speed) >> nmap IP -T4 -p- >> nmap IP -T4 -sU (longer scan UDP, 161 open port) >> nmap IP -T4 -sU -p 161 -A >> ![image](https://user-images.githubusercontent.com/90716060/230258628-9b13d7d6-d5a5-4ba3-a149-6e4fb34bcaa7.png)
 
 
 
