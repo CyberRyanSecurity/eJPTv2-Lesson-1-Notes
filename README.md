@@ -123,3 +123,7 @@ net use * /delete >> shows remote connections >> hit Y to remove mapped network 
  
  SMB: Nmap Scripts
  Ping >> Nmap IP >> 135, 139, 445 (smb) >> nmap -p445 (smb) --script smb-protocols IP >> 
+ nmap -p445 --script smb-enum-sessions IP -- ![image](https://user-images.githubusercontent.com/90716060/230534501-4bde7a62-9f2c-4d92-9f29-259924e15be1.png)
+- nmap -p445 --script smb-enum-sessions
+- nmap -p445 --script smb-enum-shares IP 
+
