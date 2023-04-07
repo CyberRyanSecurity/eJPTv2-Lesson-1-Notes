@@ -111,4 +111,15 @@ Scan the server 3:
 nmap IP -T4 (speed) >> nmap IP -T4 -p- >> nmap IP -T4 -sU (longer scan UDP, 161 open port) >> nmap IP -T4 -sU -p 161 -A >> ![image](https://user-images.githubusercontent.com/90716060/230258628-9b13d7d6-d5a5-4ba3-a149-6e4fb34bcaa7.png)
 
 
-
+SMB: Server Message Block
+- windows OS > ipconfig IP > nmap -t4 IP --open >> 135, 139, 445, 3389 open (Windows OS) 
+- SMB hangs out at port 445 >> nmap IP -sV -o (what version of 445 SMB)
+- nmap IP -sV -sC(default scripts) -- SMB Enumeration below
+![image](https://user-images.githubusercontent.com/90716060/230527249-8e5bfb88-9f49-41a6-b56a-a4187caac838.png)
+SMB is >> File explorer > MAP network drive >> IP from ipconfig >> Shows users, etc.
+net use * /delete >> shows remote connections >> hit Y to remove mapped network drive
+![image](https://user-images.githubusercontent.com/90716060/230527708-7422229d-c90a-400b-9c50-f97cbd74a423.png)
+ Command will reappear network drive
+ 
+ SMB: Nmap Scripts
+ Ping >> Nmap IP >> 135, 139, 445 (smb) >> nmap -p445 (smb) --script smb-protocols IP >> 
